@@ -417,7 +417,7 @@ class MainThread(QThread):
                             print(joke)
                             speak(joke)
               
-                     elif "shut down the system" or " shutdown computer" or "shutdown the system" in self.query:
+                     elif "shut down the system" in self.query or "shutdown computer" in self.query or "shutdown the system" in self.query:
                             os.system("shutdown /s /t 5")
 
                      elif "restart the system" in self.query:
